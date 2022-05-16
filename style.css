@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Secular+One&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab&display=swap');
+:root {
+	--bg-color: #f5f4ef;
+	--bg-color-accent: #aaa8a7;
+	--main-color: #d46752;
+	--main-accent-color: #ac8c64;
+	--inverted-bg-color: #222020;
+	--title-font: 'Secular One', sans-serif;
+	--body-font: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #eaddcf;
+	height: 100vh;
+	width: 100vw;
+}
+
+/* HEADER STYLING */
+.containerHeader {
+	position: relative;
+	width: 100vw;
+
+	height: 700px;
+	background: url(/images/womanred.jpg), rgb(46, 83, 109);
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left;
+	background-attachment: fixed;
+
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.titleDesShadow {
+	text-shadow: 3px 3px#8c7851;
+}
+
+.containerHeader::before {
+	position: absolute;
+	content: '';
+	background: rgb(2, 8, 38);
+	background: linear-gradient(
+		90deg,
+		rgba(2, 8, 38, 1) 26%,
+		rgba(2, 8, 38, 0.767927153771665) 41%,
+		rgba(2, 8, 38, 0.24411762996214115) 55%
+	);
+	width: 100vw;
+	height: inherit;
+	z-index: 1;
+}
+.textHeader {
+	width: inherit;
+	height: 100px;
+	z-index: 1;
+
+	padding-top: 1.5rem;
+	padding-left: 1.5rem;
+
+	font-family: 'Lobster', cursive;
+
+	color: var(--bg-color);
+	font-size: 7rem;
+	line-height: 1;
+
+	text-shadow: 5.5px 5.5px#8c7851;
+}
+.titledes {
+	width: inherit;
+	height: 100px;
+	z-index: 1;
+
+	padding-top: 2rem;
+	padding-left: 5rem;
+
+	font-family: 'Roboto Slab', serif;
+
+	color: var(--bg-color);
+	font-size: 2rem;
+	line-height: 1.5;
+	text-align: justify;
+}
+.headerBtn {
+	text-decoration: none;
+	background-color: #8c7851;
+	color: #fffffe;
+	border: none;
+	border-radius: 5px;
+	z-index: 1;
+	width: 200px;
+	height: 60px;
+	font-family: 'Lobster', cursive;
+	font-size: 2rem;
+	text-align: center;
+	margin-left: 170px;
+	padding-top: 10px;
+	transition: all 0.3s ease-in-out;
+}
+.headerBtn:hover {
+	box-shadow: 7px 7px 0px 0px var(--bg-color);
+	transition: all 0.3s ease-in-out;
+}
+
+/* FLAVOUR TEXT STYLING */
+.flavourTextContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100vw;
+	height: auto;
+}
+.ftcDisc {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	border: 2px black solid;
+	width: 1100px;
+	height: 500px;
+	padding-bottom: 300px;
+}
+.ftcontentcontainer {
+	width: 600px;
+	height: 200px;
+}
+/* pictures of flavour text  */
+.pic1 {
+	width: 800px;
+	height: 800px;
+	background: url(/images/pexels-jessica-nunes-1983926.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+	border: red 1px solid;
+	flex: 1;
+}
+/* FAQ STYLING */
+.aboutMeContainer {
+	width: 100vw;
+	height: 850px;
+
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #fffffe;
+}
+
+.faq {
+	align-self: center;
+	color: #8c7851;
+	font-family: Lobster;
+	font-size: 3rem;
+	text-shadow: 6px 3px #eaddcf;
+}
+
+.contentContainerAboutMe {
+	width: 100vw;
+	height: 600px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	border-radius: 5px;
+}
+.aboutMeItems {
+	box-sizing: content-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	position: relative;
+	flex-direction: column;
+	height: 100px;
+	width: 700px;
+
+	cursor: pointer;
+
+	margin: 10px;
+	transition: all 0.5s ease-in-out;
+	background-color: #eaddcf;
+	border-radius: 5px;
+
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.aboutMeItems.amiActive {
+	padding-bottom: 100px;
+	transition: all 0.5s ease-in-out;
+	background-color: #020826;
+}
+
+.titleContainer {
+	align-self: flex-start;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	width: 630px;
+	height: 50px;
+
+	margin-top: 70px;
+	margin-left: 35px;
+}
+
+.itemTitle {
+	align-self: flex-start;
+	z-index: 1;
+	font-family: var(--title-font);
+
+	color: #020826;
+
+	text-align: center;
+
+	font-size: 2rem;
+
+	transition: all 1s ease-in-out;
+	margin-top: 10px;
+}
+
+.itemTitle.itActive {
+	position: relative;
+	color: #fffffe;
+}
+.itemTitle.itActive::after {
+	content: '';
+	position: absolute;
+	width: 630px;
+	height: 3px;
+	background-color: #fffffe;
+	display: block;
+	margin-top: 5px;
+}
+
+.titleIco {
+	align-self: flex-end;
+	font-size: 2rem;
+	z-index: 1;
+	color: #020826;
+	transition: all 0.3s ease-in-out;
+}
+
+.titleIco.tiActive {
+	transform: rotate(-90deg);
+	color: #fffffe;
+	transition: all 0.3s ease-in-out;
+}
+.aboutMeText {
+	position: relative;
+	z-index: 1;
+	opacity: 0;
+	font-family: var(--body-font);
+	color: var(--bg-color);
+	text-align: left;
+	font-size: 0.75rem;
+	text-align: left;
+	transition: all 0.5s ease-in-out;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-top: 30px;
+}
+
+.amtActive {
+	display: block;
+	opacity: 1;
+	transition: all 0.5s ease-in-out;
+}
+
+fieldset {
+	border: #aaa8a7 solid 10px;
+	border-radius: 5px;
+	margin: 10px;
+}
