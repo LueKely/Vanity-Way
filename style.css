@@ -19,6 +19,17 @@
 	box-sizing: border-box;
 }
 
+h1 {
+	font-size: 4rem;
+	font-family: 'Lobster', cursive;
+	color: #020826;
+}
+p {
+	font-family: var(--body-font);
+	color: #716040;
+	font-size: 2rem;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -137,7 +148,7 @@ body {
 	flex-direction: row;
 }
 .ftContent {
-	width: 500px;
+	width: 700px;
 	height: 300px;
 }
 /* pictures of flavour text  */
@@ -145,6 +156,7 @@ body {
 	margin-top: 50px;
 	width: 530px;
 	position: relative;
+	margin-left: 100px;
 }
 
 /* FAQ STYLING */
