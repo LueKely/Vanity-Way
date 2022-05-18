@@ -25,9 +25,10 @@ h1 {
 	color: #020826;
 }
 p {
+	margin-top: 20px;
 	font-family: var(--body-font);
 	color: #716040;
-	font-size: 2rem;
+	font-size: 1.45rem;
 }
 
 body {
@@ -43,7 +44,7 @@ body {
 	position: relative;
 	width: 100vw;
 
-	height: 700px;
+	height: 100vh;
 	background: url(/images/womanred.jpg), rgb(46, 83, 109);
 
 	background-size: cover;
@@ -130,7 +131,6 @@ body {
 
 /* FLAVOUR TEXT STYLING */
 .flavourText {
-	padding-top: 100px;
 	width: 100vw;
 	height: 500px;
 	display: flex;
@@ -138,25 +138,28 @@ body {
 	justify-content: center;
 	flex-direction: column;
 	background-color: #eaddcf;
+	padding-bottom: 50px;
 }
 
 .ftItem {
-	width: 1396px;
+	z-index: 3;
+	width: 100vw;
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
+	justify-content: center;
 	flex-direction: row;
 }
+.behind {
+	z-index: -1;
+}
 .ftContent {
-	width: 700px;
-	height: 300px;
+	width: 40%;
 }
 /* pictures of flavour text  */
 .ftImg {
 	margin-top: 50px;
-	width: 530px;
-	position: relative;
-	margin-left: 100px;
+	width: 40%;
+	z-index: 1;
 }
 
 /* FAQ STYLING */
