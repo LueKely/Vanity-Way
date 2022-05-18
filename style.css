@@ -22,7 +22,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #eaddcf;
+	background-color: #f9f4ef;
 	height: 100vh;
 	width: 100vw;
 }
@@ -48,7 +48,7 @@ body {
 }
 
 .titleDesShadow {
-	text-shadow: 3px 3px#8c7851;
+	text-shadow: 3px 3px #8c7851;
 }
 
 .containerHeader::before {
@@ -79,7 +79,7 @@ body {
 	font-size: 7rem;
 	line-height: 1;
 
-	text-shadow: 5.5px 5.5px#8c7851;
+	text-shadow: 5.5px 5.5px #8c7851;
 }
 .titledes {
 	width: inherit;
@@ -119,23 +119,22 @@ body {
 
 /* FLAVOUR TEXT STYLING */
 .flavourText {
+	padding-top: 100px;
 	width: 100vw;
-	height: 1500px;
+	height: 500px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	background-color: #eaddcf;
 }
-.ftItem {
-	border: 1px solid black;
-	width: 1200px;
-	height: 300px;
 
+.ftItem {
+	width: 1396px;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	flex-wrap: wrap;
+	justify-content: flex-start;
+	flex-direction: row;
 }
 .ftContent {
 	width: 500px;
@@ -143,8 +142,11 @@ body {
 }
 /* pictures of flavour text  */
 .ftImg {
-	width: 300px;
+	margin-top: 50px;
+	width: 530px;
+	position: relative;
 }
+
 /* FAQ STYLING */
 .aboutMeContainer {
 	width: 100vw;
