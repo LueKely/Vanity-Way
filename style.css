@@ -304,9 +304,34 @@ body {
 	opacity: 1;
 	transition: all 0.5s ease-in-out;
 }
+.marqueeContainer {
+	background-color: #d46752;
+}
+.marquee {
+	width: 100vw;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	display: flex;
 
-fieldset {
-	border: #aaa8a7 solid 10px;
-	border-radius: 5px;
-	margin: 10px;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+	color: #fffffe;
+	animation: marqueeAnimate 20s linear infinite alternate;
+}
+
+.productText {
+	margin: 0 10px 0 10px;
+	font-family: var(--title-font);
+	font-size: 3rem;
+}
+
+@keyframes marqueeAnimate {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
 }
