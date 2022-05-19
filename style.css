@@ -24,6 +24,7 @@ h1 {
 	font-family: 'Lobster', cursive;
 	color: #020826;
 }
+
 p {
 	margin-top: 20px;
 	font-family: var(--body-font);
@@ -154,6 +155,7 @@ body {
 
 .ftItem {
 	z-index: 3;
+
 	width: 100vw;
 	display: flex;
 	align-items: center;
@@ -329,7 +331,7 @@ body {
 
 @keyframes marqueeAnimate {
 	0% {
-		transform: translateX(0%);
+		transform: translateX(-20%);
 	}
 	100% {
 		transform: translateX(-100%);
