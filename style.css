@@ -26,7 +26,6 @@ h1 {
 }
 
 p {
-	margin-top: 20px;
 	font-family: var(--body-font);
 	color: #716040;
 	font-size: 1.45rem;
@@ -199,15 +198,35 @@ body {
 	font-size: 3rem;
 }
 
-@keyframes marqueeAnimate {
-	0% {
-		transform: translateX(-20%);
-	}
-	100% {
-		transform: translateX(-100%);
-	}
-}
+/* Offerings */
+.offeringHeaderContainer {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-direction: column;
 
+	background: url(/images/Header\ image.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.offeringHeaderItem {
+	margin-bottom: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.offeringHeaderText {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	padding-inline: 50px;
+	background-color: #fffffeb4;
+	text-align: center;
+}
 /* FAQ STYLING */
 .aboutMeContainer {
 	width: 100vw;
@@ -338,4 +357,13 @@ body {
 	display: block;
 	opacity: 1;
 	transition: all 0.5s ease-in-out;
+}
+
+@keyframes marqueeAnimate {
+	0% {
+		transform: translateX(-20%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
 }
