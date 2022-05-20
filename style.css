@@ -133,7 +133,7 @@ body {
 /* FLAVOUR TEXT STYLING */
 .flavourText {
 	width: 100vw;
-	height: 500px;
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -155,24 +155,57 @@ body {
 
 .ftItem {
 	z-index: 3;
-
 	width: 100vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 .behind {
 	z-index: -1;
 }
 .ftContent {
-	width: 40%;
+	width: 500px;
 }
 /* pictures of flavour text  */
 .ftImg {
 	margin-top: 50px;
-	width: 25%;
+	width: 500px;
 	z-index: 1;
+}
+
+/* marquee */
+.marqueeContainer {
+	background-color: #d46752;
+}
+.marquee {
+	width: 100vw;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	display: flex;
+
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+	color: #fffffe;
+	animation: marqueeAnimate 20s linear infinite alternate;
+}
+
+.productText {
+	margin: 0 10px 0 10px;
+	font-family: var(--title-font);
+	font-size: 3rem;
+}
+
+@keyframes marqueeAnimate {
+	0% {
+		transform: translateX(-20%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
 }
 
 /* FAQ STYLING */
@@ -305,35 +338,4 @@ body {
 	display: block;
 	opacity: 1;
 	transition: all 0.5s ease-in-out;
-}
-.marqueeContainer {
-	background-color: #d46752;
-}
-.marquee {
-	width: 100vw;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	display: flex;
-
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-
-	color: #fffffe;
-	animation: marqueeAnimate 20s linear infinite alternate;
-}
-
-.productText {
-	margin: 0 10px 0 10px;
-	font-family: var(--title-font);
-	font-size: 3rem;
-}
-
-@keyframes marqueeAnimate {
-	0% {
-		transform: translateX(-20%);
-	}
-	100% {
-		transform: translateX(-100%);
-	}
 }
