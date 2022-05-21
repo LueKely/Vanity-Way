@@ -218,6 +218,7 @@ body {
 	justify-content: center;
 	flex-direction: column;
 }
+
 .offeringHeaderText {
 	display: flex;
 	align-items: center;
@@ -227,6 +228,77 @@ body {
 	background-color: #fffffeb4;
 	text-align: center;
 }
+/* featured items */
+.featuredContainer {
+	padding-block: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+}
+.fiContainers {
+	margin-inline: 50px;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+
+	flex-direction: row;
+}
+
+.featuredItems {
+	margin-inline: 10px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	width: 25%;
+
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: all 500ms ease-in-out;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.featuredItems:hover {
+	transition: all 500ms ease-in-out;
+	box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.2),
+		-1px -1px 3px 2px rgba(0, 0, 0, 0.2);
+}
+.featuredPic {
+	width: 300px;
+	max-height: 447px;
+	transition: transform 250ms ease-in-out;
+}
+.featuredPic:hover {
+	transition: transform 250ms ease-in-out;
+	transform: scale(1.5);
+}
+.fiTextContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	z-index: 2;
+	background-color: #f5f4ef;
+	padding-bottom: 20px;
+}
+.fcHeader {
+	z-index: 2;
+	margin-top: 20px;
+	font-family: var(--title-font);
+	font-size: 1.5rem;
+}
+.fcText {
+	z-index: 2;
+
+	font-size: 1rem;
+	font-family: var(--body-font);
+}
+
 /* FAQ STYLING */
 .aboutMeContainer {
 	width: 100vw;
