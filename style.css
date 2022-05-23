@@ -298,7 +298,57 @@ body {
 	font-size: 1rem;
 	font-family: var(--body-font);
 }
-
+/* Reviews */
+.backgroundSvg {
+	display: block;
+	box-sizing: content-box;
+	background-color: #8c7851;
+	padding-bottom: 10px;
+}
+.reviewsContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: #8c7851;
+	width: 100vw;
+	flex-direction: row;
+}
+.reviewItems {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 500px;
+	background-color: #f5f4ef;
+	padding-inline: 50px;
+	border-radius: 5px;
+}
+.reviewImg {
+	width: 200px;
+	border-radius: 50%;
+	box-shadow: 10px -10px 0px 0px #d46752;
+}
+.reviewText {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+/* .reviewText::before {
+	font-family: 'Font Awesome 5 Free';
+	content: '/f10e';
+	color: #d46752;
+	font-size: 2rem;
+} */
+.reviewButton {
+	border-style: none;
+	background-color: #f5f4ef;
+	font-size: 2rem;
+	color: #020826;
+	cursor: pointer;
+}
 /* FAQ STYLING */
 .aboutMeContainer {
 	width: 100vw;

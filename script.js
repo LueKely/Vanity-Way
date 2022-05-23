@@ -46,3 +46,5 @@ function remoiveIta() {
 		c.classList.remove('itActive');
 	});
 }
+
+//reviews starts here
