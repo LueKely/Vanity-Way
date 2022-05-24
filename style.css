@@ -201,15 +201,16 @@ body {
 /* Offerings */
 .offeringHeaderContainer {
 	width: 100vw;
-	height: 100vh;
+	height: 87vh;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
 	flex-direction: column;
 
-	background: url(/images/Header\ image.jpg);
-	background-position: center;
+	background: url(/images/pexels-marcelo-chagas-2229490.jpg);
+	background-position: top;
 	background-size: cover;
+	background-attachment: fixed;
 }
 .offeringHeaderItem {
 	margin-bottom: 10%;
@@ -302,7 +303,7 @@ body {
 .backgroundSvg {
 	display: block;
 	box-sizing: content-box;
-	background-color: #8c7851;
+	background-color: #eaddcf;
 	padding-bottom: 10px;
 }
 .reviewsContainer {
@@ -310,31 +311,48 @@ body {
 	align-items: center;
 	justify-content: center;
 	width: 100vw;
-	height: 100vh;
-	background-color: #8c7851;
+	height: 69vh;
+	background-color: #eaddcf;
 	width: 100vw;
-	flex-direction: row;
+	flex-direction: column;
+}
+.reviewTitle {
 }
 .reviewItems {
+	margin-top: 40px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	height: 500px;
-	background-color: #f5f4ef;
-	padding-inline: 50px;
+	border: #020826 3.5px solid;
+	padding: 50px;
 	border-radius: 5px;
 }
 .reviewImg {
 	width: 200px;
 	border-radius: 50%;
 	box-shadow: 10px -10px 0px 0px #d46752;
+	max-height: 199px;
+	object-fit: cover;
 }
+
 .reviewText {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	width: 500px;
+
+	margin-bottom: 10px;
+}
+.name {
+	font-family: var(--title-font);
+	padding-block: 10px;
+}
+.reviewWords {
+	font-size: 0.85rem;
+	text-align: center;
 }
 /* .reviewText::before {
 	font-family: 'Font Awesome 5 Free';
@@ -344,9 +362,9 @@ body {
 } */
 .reviewButton {
 	border-style: none;
-	background-color: #f5f4ef;
-	font-size: 2rem;
-	color: #020826;
+	background-color: #eaddcf;
+	font-size: 3rem;
+	color: #8c7851;
 	cursor: pointer;
 }
 /* FAQ STYLING */
