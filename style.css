@@ -151,6 +151,9 @@ body {
 
 	padding-bottom: 50px;
 }
+.ftp {
+	margin-top: 20px;
+}
 
 .ftItem {
 	z-index: 3;
