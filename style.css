@@ -45,7 +45,7 @@ body {
 	width: 100vw;
 
 	height: 100vh;
-	background: url(/images/womanred.jpg), rgb(46, 83, 109);
+	background: url(./images/womanred.jpg), rgb(46, 83, 109);
 
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -210,7 +210,7 @@ body {
 	justify-content: flex-end;
 	flex-direction: column;
 
-	background: url(/images/pexels-marcelo-chagas-2229490.jpg);
+	background: url(./images/pexels-marcelo-chagas-2229490.jpg);
 	background-position: top;
 	background-size: cover;
 	background-attachment: fixed;
