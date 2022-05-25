@@ -524,6 +524,88 @@ body {
 	transition: all 0.5s ease-in-out;
 }
 
+/* footer */
+footer {
+	padding: 20px;
+	width: 100vw;
+	height: 300px;
+	background-color: #020826;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: row;
+}
+.mfTitle {
+	text-shadow: 3px 3px #8c7851;
+	color: #f9f4ef;
+}
+.mainFooter {
+	width: 35%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.shortCutLinks {
+	margin-top: 10px;
+}
+.shortCutItem {
+	font-size: 2.5rem;
+	margin-inline: 5px;
+	color: #f9f4ef;
+	transition: color 250ms ease-in-out;
+}
+
+.shortCutItem:hover {
+	color: #8c7851;
+	transition: color 250ms ease-in-out;
+}
+.follow {
+	margin-top: 40px;
+	font-family: var(--title-font);
+	font-size: 1.5rem;
+	color: #f9f4ef;
+}
+.secondFooter {
+	padding-block: 80px;
+	width: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.contacts {
+	color: #f9f4ef;
+	font-size: 1.5rem;
+	font-family: var(--title-font);
+}
+.aboutUs {
+	padding: 30px;
+	width: 30%;
+}
+.auTitle {
+	position: relative;
+
+	font-size: 1.4rem;
+	font-family: var(--title-font);
+	color: #f9f4ef;
+}
+.auTitle::after {
+	content: '';
+
+	width: 100%;
+	height: 2px;
+	background-color: #fffffe;
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.auText {
+	font-size: 0.75rem;
+	color: #f9f4ef;
+}
+/* animation keys */
 @keyframes marqueeAnimate {
 	0% {
 		transform: translateX(-20%);
