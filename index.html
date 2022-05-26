@@ -11,6 +11,7 @@
 			href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="icon" href="./images/Icon.png" />
 		<script
 			src="https://kit.fontawesome.com/edf31f984a.js"
 			crossorigin="anonymous"
@@ -19,13 +20,27 @@
 	</head>
 	<body>
 		<!-- to do list: 
-         -list down the products you sell after marquee 
-	     -make footer
-        -make navbar
-	-adjust the margin of P
+
+
+
 -->
+
+		<!-- NavBar -->
+		<div class="nbContainer">
+			<div class="nbTitle">
+				<a href="./index.html" class="nbtText">Vanity Way</a>
+			</div>
+			<div class="nbContents">
+				<a href="#home" class="nbItems">Home</a>
+				<a href="#offers" class="nbItems">Offers</a>
+				<a href="#reviews" class="nbItems">Reviews</a>
+				<a href="#FaQ" class="nbItems">FaQ</a>
+				<a href="#contactUs" class="nbItems">Contact Us</a>
+			</div>
+		</div>
+
 		<!--HEADER-->
-		<div class="containerHeader">
+		<div class="containerHeader" id="home">
 			<div class="textHeader">Vanity Way</div>
 			<div class="titledes">
 				&nbsp; &nbsp; &nbsp; &nbsp; Choose your way <br />
@@ -43,7 +58,7 @@
 		</div>
 
 		<!-- content starts -->
-		<div class="flavourText">
+		<div class="flavourText" id="test">
 			<div class="ftItem">
 				<div class="ftContent">
 					<h1>
@@ -155,7 +170,7 @@
 			</span>
 		</div>
 		<!-- Offerings  -->
-		<div class="offeringHeaderContainer">
+		<div class="offeringHeaderContainer" id="offers">
 			<div class="offeringHeaderItem">
 				<div class="offeringHeaderText">
 					<h1>What We Offer</h1>
@@ -223,7 +238,7 @@
 				d="M0,160L80,149.3C160,139,320,117,480,117.3C640,117,800,139,960,149.3C1120,160,1280,160,1360,160L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
 			></path>
 		</svg>
-		<div class="reviewsContainer">
+		<div class="reviewsContainer" id="reviews">
 			<h1 class="reviewTitle">Our Reviews</h1>
 			<div class="reviewItems">
 				<img class="reviewImg" />
@@ -254,7 +269,7 @@
 			></path>
 		</svg>
 		<!--FAQ STARTS -->
-		<div class="aboutMeContainer">
+		<div class="aboutMeContainer" id="FaQ">
 			<div class="faq">Frequently Asked Questions</div>
 
 			<div class="contentContainerAboutMe">
@@ -325,7 +340,7 @@
 
 		<script src="./review.js"></script>
 
-		<footer>
+		<footer id="contactUs">
 			<div class="mainFooter">
 				<h1 class="mfTitle">Vanity Way</h1>
 				<p class="follow">Follow Us</p>

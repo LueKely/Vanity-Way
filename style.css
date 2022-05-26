@@ -12,7 +12,12 @@
 	padding: 0;
 	overflow-x: hidden;
 }
-
+html {
+	scroll-behavior: smooth;
+}
+a {
+	text-decoration: none;
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -38,9 +43,59 @@ body {
 	height: 100vh;
 	width: 100vw;
 }
+/* navbar */
+.nbContainer {
+	padding: 10px;
+	z-index: 5;
+	position: fixed;
+	width: 100vw;
+	height: 70px;
+	background-color: #020826;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.nbTitle {
+	margin-inline: 5%;
+	width: 200px;
+}
 
+.nbtText {
+	font-family: 'Lobster', cursive;
+	color: #f9f4ef;
+	font-size: 2.5rem;
+	transition: text-shadow 0.2s ease-in-out;
+}
+.nbtText:hover {
+	text-shadow: 3px 3px #8c7851;
+
+	transition: text-shadow 0.2s ease-in-out;
+}
+.nbContents {
+	margin-left: auto;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-right: 100px;
+}
+.nbItems {
+	font-family: var(--title-font);
+	color: #f9f4ef;
+	font-size: 1rem;
+	width: 100px;
+	text-align: center;
+	transition: color 0.5s ease-in-out;
+}
+.nbItems:hover {
+	background-color: #f9f4ef;
+	color: #020826;
+	border-radius: 10px;
+	transition: color 0.5s ease-in-out;
+}
 /* HEADER STYLING */
 .containerHeader {
+	padding-top: 10px;
 	position: relative;
 	width: 100vw;
 
@@ -74,13 +129,14 @@ body {
 		rgba(2, 8, 38, 0.24411762996214115) 55%
 	);
 	width: 100vw;
-	height: inherit;
+	height: 99vh;
 	z-index: 1;
 }
 .textHeader {
 	width: inherit;
 	height: 100px;
 	z-index: 1;
+	margin-top: 100px;
 
 	padding-top: 1.5rem;
 	padding-left: 1.5rem;
