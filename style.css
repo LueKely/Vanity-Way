@@ -47,7 +47,7 @@ body {
 .nbContainer {
 	padding: 10px;
 	z-index: 5;
-	position: fixed;
+	position: block;
 	width: 100vw;
 	height: 70px;
 	background-color: #020826;
@@ -64,13 +64,10 @@ body {
 	font-family: 'Lobster', cursive;
 	color: #f9f4ef;
 	font-size: 2.5rem;
-	transition: text-shadow 0.2s ease-in-out;
-}
-.nbtText:hover {
-	text-shadow: 3px 3px #8c7851;
 
-	transition: text-shadow 0.2s ease-in-out;
+	text-shadow: 3px 3px #8c7851;
 }
+
 .nbContents {
 	margin-left: auto;
 
@@ -94,97 +91,30 @@ body {
 	transition: color 0.5s ease-in-out;
 }
 /* HEADER STYLING */
+
 .containerHeader {
-	padding-top: 10px;
-	position: relative;
 	width: 100vw;
 
 	height: 100vh;
-	background: url(./images/womanred.jpg), rgb(46, 83, 109);
-
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: left;
-	background-attachment: fixed;
 
 	display: flex;
-	align-items: flex-start;
-	justify-content: space-between;
+	align-items: center;
+	justify-content: center;
 	flex-direction: row;
-	flex-wrap: wrap;
+	padding-block: 100px;
 }
-
-.titleDesShadow {
-	text-shadow: 3px 3px #8c7851;
+.containerItem1 {
+	width: 60%;
+	height: inherit;
+	background-position: top;
+	background-size: cover;
+	background-image: url(./images/pexels-ali-pazani-2584269.jpg);
 }
-
-.containerHeader::before {
-	position: absolute;
-	content: '';
-	background: rgb(2, 8, 38);
-	background: linear-gradient(
-		90deg,
-		rgba(2, 8, 38, 1) 26%,
-		rgba(2, 8, 38, 0.767927153771665) 41%,
-		rgba(2, 8, 38, 0.24411762996214115) 55%
-	);
-	width: 100vw;
-	height: 99vh;
-	z-index: 1;
+.containerItem2 {
+	width: 40%;
+	height: inherit;
+	background-color: #020826;
 }
-.textHeader {
-	width: inherit;
-	height: 100px;
-	z-index: 1;
-	margin-top: 100px;
-
-	padding-top: 1.5rem;
-	padding-left: 1.5rem;
-
-	font-family: 'Lobster', cursive;
-
-	color: var(--bg-color);
-	font-size: 7rem;
-	line-height: 1;
-
-	text-shadow: 5.5px 5.5px #8c7851;
-}
-.titledes {
-	width: inherit;
-	height: 100px;
-	z-index: 1;
-
-	padding-top: 2rem;
-	padding-left: 5rem;
-
-	font-family: 'Roboto Slab', serif;
-
-	color: var(--bg-color);
-	font-size: 2rem;
-	line-height: 1.5;
-	text-align: justify;
-}
-.headerBtn {
-	text-decoration: none;
-	background-color: #8c7851;
-	color: #fffffe;
-	border: none;
-	border-radius: 5px;
-	z-index: 1;
-	width: 200px;
-	height: 60px;
-	font-family: 'Lobster', cursive;
-	font-size: 2rem;
-	text-align: center;
-	margin-left: 170px;
-	padding-top: 10px;
-	transition: all 0.3s ease-in-out;
-}
-.headerBtn:hover {
-	box-shadow: 7px 7px 0px 0px var(--bg-color);
-	transition: all 0.3s ease-in-out;
-}
-
 /* FLAVOUR TEXT STYLING */
 .flavourText {
 	width: 100vw;
