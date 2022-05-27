@@ -45,9 +45,10 @@ body {
 }
 /* navbar */
 .nbContainer {
+	overflow: hidden;
 	padding: 10px;
 	z-index: 5;
-	position: block;
+	position: fixed;
 	width: 100vw;
 	height: 70px;
 	background-color: #020826;
@@ -101,22 +102,62 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-direction: row;
-	padding-block: 100px;
+	padding-top: 140px;
 }
 .containerItem1 {
+	display: flex;
 	width: 60%;
 	height: inherit;
 	background-position: top;
 	background-size: cover;
 	background-image: url(./images/pexels-ali-pazani-2584269.jpg);
 }
+.containerItem1 h1 {
+	align-self: flex-end;
+	color: #f9f4ef;
+	text-shadow: 3px 3px #8c7851;
+	margin: 60px 30px;
+}
 .containerItem2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 40%;
 	height: inherit;
 	background-color: #020826;
+	flex-direction: column;
+}
+.containerItem2 h2 {
+	font-size: 2rem;
+	font-family: var(--title-font);
+	color: #f9f4ef;
+}
+.containerItem2 p {
+	color: #f9f4ef;
+	font-size: 1rem;
+}
+.containerItem2 a {
+	border: #f9f4ef 2px solid;
+	padding: 20px 30px;
+	color: #f9f4ef;
+	border-radius: 50px;
+	font-family: var(--body-font);
+	transition: all 100ms ease-in-out;
+}
+.containerItem2 a:hover {
+	color: #020826;
+	background-color: #f9f4ef;
+	transition: all 100ms ease-in-out;
+}
+.line {
+	margin-block: 50px;
+	width: 1px;
+	height: 100px;
+	background-color: #f9f4ef;
 }
 /* FLAVOUR TEXT STYLING */
 .flavourText {
+	margin-top: 70px;
 	width: 100vw;
 
 	display: flex;
