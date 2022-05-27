@@ -28,7 +28,7 @@ const userInfos = [
 		img: './images/monti.jpg',
 	},
 	{
-		name: 'Chinita',
+		name: 'Anna Williams',
 		text: 'Excepteur velit aliquip nostrud ex sunt laboris voluptate mollit aliqua. Adipisicing amet voluptate cillum incididunt anim consequat quis do est id ex eiusmod. Excepteur officia exercitation amet sit officia anim.',
 		img: './images/chinita.jpg',
 	},

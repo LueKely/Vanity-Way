@@ -259,6 +259,12 @@ body {
 	background-color: #fffffeb4;
 	text-align: center;
 }
+.offeringHeaderText h1 {
+	font-family: var(--title-font);
+}
+.offeringHeaderText p {
+	color: #020826;
+}
 /* featured items */
 .featuredContainer {
 	padding-block: 50px;
