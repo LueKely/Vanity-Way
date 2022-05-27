@@ -15,7 +15,7 @@ class reviewers {
 }
 let users = [];
 
-// I think this is much a better approach because this is easy to extend (when you want to add a new user for instance, you can just add an object here)
+//A way to make it easy to extend (when you want to add a new user for instance, you can just add an object here)
 const userInfos = [
 	{
 		name: 'Ervin Pangilinan',
