@@ -3,22 +3,24 @@
 	display: none;
 }
 
-@media all and (max-width: 899px) {
+@media screen and (max-width: 899px) {
 	/* wagmotong galawin */
+
 	.nbContainer {
 		display: none;
 	}
 	* {
 		scroll-behavior: smooth;
 	}
+
 	.SuperParent {
-		display: flex;
+		overflow: hidden;
 		position: fixed;
+		display: flex;
 		flex-direction: column;
 		align-items: center;
 		width: 100vw;
 		z-index: 100;
-		overflow-x: hidden;
 	}
 	.nbContainerM {
 		display: flex;
@@ -56,7 +58,7 @@
 		padding-block: 10px;
 		z-index: 100;
 		width: 100vw;
-		height: 100vh;
+
 		transform: translateX(100%);
 		background-color: #020826;
 		display: flex;
