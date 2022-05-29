@@ -5,11 +5,12 @@
 
 @media screen and (max-width: 899px) {
 	/* wagmotong galawin */
-
+	/* navbar */
 	.nbContainer {
 		display: none;
 	}
 	* {
+		overflow-x: hidden;
 		scroll-behavior: smooth;
 	}
 
@@ -80,5 +81,66 @@
 	.nbItems:active {
 		transform: scale(0.95);
 		transition: transform 0.5s ease-in-out;
+	}
+
+	/* header */
+	.containerHeader {
+		height: 90vh;
+		flex-direction: column;
+		padding-top: 0;
+	}
+	.containerItem1 {
+		margin-top: 5%;
+		width: inherit;
+		height: 70%;
+	}
+	.containerItem1 h1 {
+		font-size: 2.5rem;
+		align-self: flex-end;
+		text-align: center;
+		margin-inline: auto;
+		margin-block: 20px;
+	}
+	.containerItem2 {
+		width: 100vw;
+		height: 30%;
+	}
+	.containerItem2 p {
+		margin-bottom: 10px;
+	}
+	.containerItem2 a {
+		margin-top: 10px;
+	}
+	.line {
+		display: none;
+	}
+
+	/* flavourText */
+
+	.flavourText {
+		margin-top: 0;
+	}
+	.flavourText h1 {
+		font-size: 2.5rem;
+		text-align: center;
+		margin: 10px;
+	}
+	.flavourText p {
+		font-size: 1rem;
+
+		margin: 20px;
+	}
+	.ftImg {
+		margin-top: 25px;
+	}
+	.flavourText2 h1 {
+		font-size: 2.5rem;
+		text-align: center;
+		margin: 10px;
+	}
+	.flavourText2 p {
+		font-size: 1rem;
+
+		margin: 20px;
 	}
 }
