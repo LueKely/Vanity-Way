@@ -316,10 +316,10 @@ body {
 	max-height: 543px;
 	transition: transform 250ms ease-in-out;
 }
-.featuredPic:hover {
+/* .featuredPic:hover {
 	transition: transform 250ms ease-in-out;
 	transform: scale(1.5);
-}
+} */
 .fiTextContainer {
 	display: flex;
 	align-items: center;

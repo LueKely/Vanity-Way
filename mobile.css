@@ -146,12 +146,37 @@
 		font-size: 1rem;
 		margin: 20px;
 	}
-
+	/* offering header */
 	.offeringHeaderContainer {
 		background-attachment: scroll;
 		height: 600px;
 		background-size: cover;
 		background-repeat: no-repeat;
+	}
+	.fiContainers {
+		margin-inline: 0;
+		flex-wrap: wrap;
+	}
+	.featuredItems {
+		box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.2),
+			-1px -1px 3px 2px rgba(0, 0, 0, 0.2);
+		margin-inline: 5px;
+		width: 46%;
+		margin-block: 5px;
+	}
+
+	.fcText {
+		font-size: 0.55rem;
+	}
+	/* reviews */
+	.reviewItems {
+		padding: 25px;
+		height: 60vh;
+		width: 90vw;
+		padding-inline: 10px;
+	}
+	.reviewWords {
+		margin-inline: 100px;
 	}
 }
 @media screen and (max-width: 500px) {
@@ -164,5 +189,8 @@
 
 	.offeringHeaderText p {
 		font-size: 1rem;
+	}
+	.featuredPic {
+		max-height: 283px;
 	}
 }
