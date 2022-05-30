@@ -2,6 +2,9 @@
 .SuperParent {
 	display: none;
 }
+.marqueeMobile {
+	display: none;
+}
 
 @media screen and (max-width: 899px) {
 	/* wagmotong galawin */
@@ -125,6 +128,7 @@
 		text-align: center;
 		margin: 10px;
 	}
+
 	.flavourText p {
 		font-size: 1rem;
 
@@ -140,7 +144,25 @@
 	}
 	.flavourText2 p {
 		font-size: 1rem;
-
 		margin: 20px;
+	}
+
+	.offeringHeaderContainer {
+		background-attachment: scroll;
+		height: 600px;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+@media screen and (max-width: 500px) {
+	.productText {
+		font-size: 2rem;
+	}
+	.offeringHeaderText h1 {
+		font-size: 2rem;
+	}
+
+	.offeringHeaderText p {
+		font-size: 1rem;
 	}
 }

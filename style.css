@@ -207,12 +207,16 @@ body {
 
 /* marquee */
 .marqueeContainer {
+	position: relative;
+	height: 100px;
+	display: block;
 	background-color: #d46752;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .marquee {
-	width: 100vw;
-	padding-top: 25px;
-	padding-bottom: 25px;
+	position: absolute;
 	display: flex;
 
 	flex-direction: row;
@@ -220,7 +224,7 @@ body {
 	justify-content: center;
 
 	color: #fffffe;
-	animation: marqueeAnimate 20s linear infinite alternate;
+	animation: marqueeAnimate 60s linear infinite alternate;
 }
 
 .productText {
@@ -259,6 +263,7 @@ body {
 	padding-inline: 50px;
 	background-color: #fffffeb4;
 	text-align: center;
+	border-radius: 2px;
 }
 .offeringHeaderText h1 {
 	font-family: var(--title-font);
@@ -644,9 +649,9 @@ footer {
 /* animation keys */
 @keyframes marqueeAnimate {
 	0% {
-		transform: translateX(-20%);
+		transform: translateX(20%);
 	}
 	100% {
-		transform: translateX(-100%);
+		transform: translateX(-45%);
 	}
 }
