@@ -451,7 +451,6 @@ body {
 .faq-items {
 	overflow: hidden;
 	width: 50vw;
-	height: 100px;
 
 	box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2),
 		-2px -2px 3px 2px rgba(0, 0, 0, 0.2);
@@ -463,11 +462,12 @@ body {
 	border-radius: 5px;
 
 	transition: all 0.75s ease-in-out;
+
+	cursor: pointer;
 }
 .faq-items.items-active {
 	background-color: #020826;
 	transition: all 0.75s ease-in-out;
-	height: 350px;
 }
 
 .faq-title {
@@ -480,7 +480,7 @@ body {
 .faq-h1 {
 	text-align: center;
 	margin-inline: auto;
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
 .faq-h1.h1-active {
 	color: #f5f4ef;
@@ -488,10 +488,10 @@ body {
 }
 .faq-icon {
 	margin-block: auto;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	text-align: center;
+	margin-right: 10px;
 
-	cursor: pointer;
 	transition: all 0.3s ease-in-out;
 }
 
@@ -510,14 +510,20 @@ body {
 }
 
 .faq-p.p-active {
-	margin-top: 20px;
-	margin-inline: 20px;
 	opacity: 1;
 	display: block;
 	transition: all 0.5s ease-in-out 5s;
 	color: #fffffe;
+	margin-inline: 20px;
 }
-
+.faq-p.p-active::before {
+	content: '';
+	margin-block: 10px;
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: #f9f4ef;
+}
 /* footer */
 footer {
 	margin-top: 40px;
