@@ -455,7 +455,6 @@ body {
 
 .contentContainerAboutMe {
 	width: 100vw;
-	height: 600px;
 
 	display: flex;
 	align-items: center;
@@ -472,7 +471,7 @@ body {
 	position: relative;
 	flex-direction: column;
 	height: 100px;
-	width: 700px;
+	width: 300px;
 
 	cursor: pointer;
 
@@ -485,20 +484,19 @@ body {
 }
 
 .aboutMeItems.amiActive {
-	padding-bottom: 100px;
+	overflow: visible;
+	padding-bottom: 200px;
 	transition: all 0.5s ease-in-out;
 	background-color: #020826;
 }
 
 .titleContainer {
+	position: absolute;
 	align-self: flex-start;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
-	width: 630px;
-	height: 50px;
 
-	margin-top: 70px;
 	margin-left: 35px;
 }
 
@@ -511,7 +509,7 @@ body {
 
 	text-align: center;
 
-	font-size: 2rem;
+	font-size: 1rem;
 
 	transition: all 1s ease-in-out;
 	margin-top: 10px;
@@ -521,19 +519,11 @@ body {
 	position: relative;
 	color: #fffffe;
 }
-.itemTitle.itActive::after {
-	content: '';
-	position: absolute;
-	width: 630px;
-	height: 3px;
-	background-color: #fffffe;
-	display: block;
-	margin-top: 5px;
-}
 
 .titleIco {
+	margin-left: auto;
 	align-self: flex-end;
-	font-size: 2rem;
+	font-size: 1rem;
 	z-index: 1;
 	color: #020826;
 	transition: all 0.3s ease-in-out;
@@ -545,23 +535,23 @@ body {
 	transition: all 0.3s ease-in-out;
 }
 .aboutMeText {
-	position: relative;
+	position: absolute;
 	z-index: 1;
-	opacity: 0;
+	display: none;
 	font-family: var(--body-font);
 	color: var(--bg-color);
 	text-align: left;
 	font-size: 0.75rem;
 	text-align: left;
 	transition: all 0.5s ease-in-out;
+	margin-top: 250px;
 	padding-left: 50px;
 	padding-right: 50px;
-	margin-top: 30px;
 }
 
 .amtActive {
 	display: block;
-	opacity: 1;
+
 	transition: all 0.5s ease-in-out;
 }
 
