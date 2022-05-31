@@ -435,128 +435,92 @@ body {
 	color: #645638;
 }
 /* FAQ STYLING */
-.aboutMeContainer {
-	width: 100vw;
-	height: 850px;
-
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	flex-direction: column;
-	background-color: #fffffe;
+#FaQ {
+	text-align: center;
+	margin-bottom: 50px;
 }
-
-.faq {
-	align-self: center;
-	color: #020826;
-	font-family: var(--title-font);
-	font-size: 3rem;
-}
-
-.contentContainerAboutMe {
+.faq-container {
 	width: 100vw;
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-
-	border-radius: 5px;
 }
-.aboutMeItems {
-	box-sizing: content-box;
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-	position: relative;
-	flex-direction: column;
+
+.faq-items {
+	overflow: hidden;
+	width: 50vw;
 	height: 100px;
-	width: 300px;
 
-	cursor: pointer;
+	box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2),
+		-2px -2px 3px 2px rgba(0, 0, 0, 0.2);
 
-	margin: 10px;
-	transition: all 0.5s ease-in-out;
-	background-color: #f9f4ef;
+	margin-block: 10px;
+
+	padding: 15px 10px;
+
 	border-radius: 5px;
 
-	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+	transition: all 0.75s ease-in-out;
 }
-
-.aboutMeItems.amiActive {
-	overflow: visible;
-	padding-bottom: 200px;
-	transition: all 0.5s ease-in-out;
+.faq-items.items-active {
 	background-color: #020826;
+	transition: all 0.75s ease-in-out;
+	height: 350px;
 }
 
-.titleContainer {
-	position: absolute;
-	align-self: flex-start;
+.faq-title {
+	margin-top: 20px;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
-
-	margin-left: 35px;
+	padding-bottom: 10px;
 }
-
-.itemTitle {
-	align-self: flex-start;
-	z-index: 1;
-	font-family: var(--title-font);
-
-	color: #020826;
-
+.faq-h1 {
+	text-align: center;
+	margin-inline: auto;
+	font-size: 1.5rem;
+}
+.faq-h1.h1-active {
+	color: #f5f4ef;
+	transition: all 0.3s ease-in-out;
+}
+.faq-icon {
+	margin-block: auto;
+	font-size: 1.5rem;
 	text-align: center;
 
-	font-size: 1rem;
-
-	transition: all 1s ease-in-out;
-	margin-top: 10px;
-}
-
-.itemTitle.itActive {
-	position: relative;
-	color: #fffffe;
-}
-
-.titleIco {
-	margin-left: auto;
-	align-self: flex-end;
-	font-size: 1rem;
-	z-index: 1;
-	color: #020826;
+	cursor: pointer;
 	transition: all 0.3s ease-in-out;
 }
 
-.titleIco.tiActive {
+.faq-icon.icon-active {
 	transform: rotate(-90deg);
 	color: #fffffe;
 	transition: all 0.3s ease-in-out;
 }
-.aboutMeText {
-	position: absolute;
-	z-index: 1;
+.faq-p {
 	display: none;
+	opacity: 0;
+
+	font-size: 1rem;
+	transition: display 0.5s ease-in-out;
 	font-family: var(--body-font);
-	color: var(--bg-color);
-	text-align: left;
-	font-size: 0.75rem;
-	text-align: left;
-	transition: all 0.5s ease-in-out;
-	margin-top: 250px;
-	padding-left: 50px;
-	padding-right: 50px;
 }
 
-.amtActive {
+.faq-p.p-active {
+	margin-top: 20px;
+	margin-inline: 20px;
+	opacity: 1;
 	display: block;
-
-	transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out 5s;
+	color: #fffffe;
 }
 
 /* footer */
 footer {
+	margin-top: 40px;
 	padding: 20px;
 	width: 100vw;
 	height: 300px;
