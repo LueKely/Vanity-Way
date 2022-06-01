@@ -4,6 +4,7 @@ const faqIcons = document.querySelectorAll('.faq-icon');
 const faqItems = document.querySelectorAll('.faq-items');
 
 for (let i = 0; i < faqIcons.length; i++) {
+	// touchstart
 	faqItems[i].addEventListener('click', () => {
 		if (faqItems[i].classList.contains('items-active')) {
 			faqItems[i].classList.remove('items-active');
