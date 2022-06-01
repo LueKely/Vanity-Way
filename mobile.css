@@ -179,6 +179,9 @@
 		margin-inline: 100px;
 	}
 	/* faq */
+	#FaQ {
+		font-size: 3rem;
+	}
 	.faq-items {
 		width: 90vw;
 	}
