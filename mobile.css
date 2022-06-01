@@ -171,12 +171,15 @@
 	/* reviews */
 	.reviewItems {
 		padding: 25px;
-		height: 60vh;
-		width: 90vw;
+
+		width: 80vw;
 		padding-inline: 10px;
 	}
 	.reviewWords {
-		margin-inline: 100px;
+		margin-inline: 25px;
+	}
+	.reviewButton {
+		font-size: 3rem;
 	}
 	/* faq */
 	#FaQ {
@@ -190,6 +193,23 @@
 	}
 	.faq-icon {
 		font-size: 1.5rem;
+	}
+
+	/* footer */
+	footer {
+		flex-direction: column;
+		align-items: center;
+		justify-items: center;
+	}
+	.mainFooter {
+		width: auto;
+	}
+	.secondFooter {
+		padding-block: 40px;
+		width: auto;
+	}
+	.aboutUs {
+		width: auto;
 	}
 }
 @media screen and (max-width: 500px) {

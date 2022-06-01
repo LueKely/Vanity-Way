@@ -15,7 +15,6 @@ for (let i = 0; i < faqIcons.length; i++) {
 			removeFaqIcons();
 			removeFaqItems();
 			removeFaqP();
-
 			faqItems[i].classList.add('items-active');
 			faqH1[i].classList.add('h1-active');
 			faqIcons[i].classList.add('icon-active');

@@ -382,31 +382,30 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 500px;
+	width: 40vw;
 	box-shadow: 2px 2px 5px 3px #9b938b, -2px -2px 5px 3px #9b938b;
 	padding: 50px;
 	border-radius: 5px;
+	background-color: #f5f4ef;
 }
 .reviewImg {
 	width: 200px;
 	border-radius: 50%;
-	box-shadow: 10px -10px 0px 0px #d46752;
+
 	max-height: 199px;
 	object-fit: cover;
 }
-.reviewImg::before {
-}
+
 .reviewText {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 500px;
-
+	width: 100%;
+	height: 225px;
 	margin-bottom: 10px;
 }
-.reviewText::after {
-}
+
 .name {
 	font-family: var(--title-font);
 	padding-block: 10px;
@@ -415,18 +414,22 @@ body {
 	font-size: 0.85rem;
 	text-align: center;
 }
-/* .reviewText::before {
-	font-family: 'Font Awesome 5 Free';
-	content: '/f10e';
-	color: #d46752;
-	font-size: 2rem;
-} */
+
+.reviewButtons {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
 .reviewButton {
+	z-index: 3;
 	border-style: none;
-	background-color: #eaddcf;
+	background-color: #f5f4ef;
 	font-size: 3rem;
 	color: #8c7851;
 	cursor: pointer;
+	margin: 0 2px;
 }
 .reviewButton:active {
 	transform: scale(0.98);
@@ -532,7 +535,7 @@ footer {
 	margin-top: 40px;
 	padding: 20px;
 	width: 100vw;
-	height: 300px;
+
 	background-color: #020826;
 	display: flex;
 	align-items: flex-start;
