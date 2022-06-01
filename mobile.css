@@ -59,19 +59,22 @@
 	}
 
 	.nbList {
-		padding-block: 10px;
-		z-index: 100;
-		width: 100vw;
-
-		transform: translateX(100%);
-		background-color: #020826;
+		position: fixed;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
+		padding-block: 20px;
+
+		width: 100vw;
+
+		transform: translateX(100%);
+		background-color: #020826;
+
 		transition: transform 500ms ease-in-out;
 	}
 	.nbList.nblA {
+		left: 0%;
 		transform: translateX(0%);
 		transition: transform 500ms ease-in-out;
 	}
@@ -173,7 +176,9 @@
 		padding: 25px;
 
 		width: 80vw;
-		padding-inline: 10px;
+	}
+	.reviewTitle {
+		font-size: 2rem;
 	}
 	.reviewWords {
 		margin-inline: 25px;
@@ -204,9 +209,17 @@
 	.mainFooter {
 		width: auto;
 	}
+
+	.mfTitle {
+		font-size: 3rem;
+	}
+
 	.secondFooter {
 		padding-block: 40px;
 		width: auto;
+	}
+	.contacts {
+		font-size: 1.2rem;
 	}
 	.aboutUs {
 		width: auto;
