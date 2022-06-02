@@ -1,5 +1,6 @@
 # ITEC FINALS: STATIC WEBSITE
 - This is my finals for my course in ITEC.
+- This is also my first major project that i have done.
 - I used **html and css and vanilla** js for this project 
 
 # RESOURCES 
