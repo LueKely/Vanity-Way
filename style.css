@@ -459,13 +459,13 @@ body {
 .faq-items {
 	overflow: hidden;
 	width: 50vw;
-
+	height: 100px;
 	box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2),
 		-2px -2px 3px 2px rgba(0, 0, 0, 0.2);
 
 	margin-block: 10px;
 
-	padding: 15px 10px;
+	padding: 15px 15px;
 
 	border-radius: 5px;
 
@@ -474,6 +474,7 @@ body {
 	cursor: pointer;
 }
 .faq-items.items-active {
+	height: 45vh;
 	background-color: #020826;
 	transition: all 0.75s ease-in-out;
 }
