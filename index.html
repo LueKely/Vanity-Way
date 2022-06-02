@@ -11,19 +11,20 @@
 			href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="icon" href="./images/Icon.png" />
-		<script
-			src="https://kit.fontawesome.com/edf31f984a.js"
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
 			crossorigin="anonymous"
-		></script>
+			referrerpolicy="no-referrer"
+		/>
+
+		<link rel="icon" href="./images/Icon.png" />
+		<link rel="stylesheet" href="./mobile.css" />
+
 		<title>Vanity Way</title>
 	</head>
 	<body>
-		<!-- to do list: 
-adjust 
-
--->
-
 		<!-- NavBar -->
 		<div class="nbContainer">
 			<div class="nbTitle">
@@ -36,27 +37,45 @@ adjust
 				<a href="#FaQ" class="nbItems">FaQ</a>
 				<a href="#contactUs" class="nbItems">Contact Us</a>
 			</div>
-		
 		</div>
-		<!-- <div style="height: 70px; width: 100vw"></div> -->
+		<!-- mobile navbar -->
+		<div class="SuperParent">
+			<div class="nbContainerM">
+				<div class="nbTitleM">
+					<a href="./index.html" class="nbtText">Vanity Way</a>
+				</div>
+				<div class="btnMobile"><i class="fa-solid fa-bars"></i></div>
+			</div>
+			<div class="nbList">
+				<a href="#home" class="nbItems">Home</a>
+				<a href="#offers" class="nbItems">Offers</a>
+				<a href="#reviews" class="nbItems">Reviews</a>
+				<a href="#FaQ" class="nbItems">FaQ</a>
+				<a href="#contactUs" class="nbItems">Contact Us</a>
+			</div>
+		</div>
 
 		<!--HEADER-->
 		<div class="containerHeader" id="home">
-		   <div class="containerItem1">
-			   <h1>Your Way. <br>The Vanity Way. </h1>
+			<div class="containerItem1">
+				<h1>Your Way. <br />The Vanity Way.</h1>
+			</div>
+			<div class="containerItem2">
+				<h2>Sales Up To 50% Off</h2>
+				<p>Use the code "<b>VW50</b>" for free shipping</p>
+				<div class="line"></div>
 
-		   </div>
-		   <div class="containerItem2">
-          <h2>Sales Up To 50% Off</h2>
-		  <p>Use the code "<b>VW50</b>" for free shipping</p>
-		  <div class="line"></div>
-
-		  <a target="_blank" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.JJ4ZxNkVDMO5U1c5-m2rzAHaFd%26pid%3DApi&f=1" class="shop-now">Shop Now</a>
-		</div>
-
+				<a
+					target="_blank"
+					href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.JJ4ZxNkVDMO5U1c5-m2rzAHaFd%26pid%3DApi&f=1"
+					class="shop-now"
+					>Shop Now
+				</a>
+			</div>
 		</div>
 
 		<!-- content starts -->
+
 		<div class="flavourText" id="test">
 			<div class="ftItem">
 				<div class="ftContent">
@@ -97,7 +116,7 @@ adjust
 				</div>
 			</div>
 		</div>
-		</div>
+
 		<!-- marquee starts -->
 		<div class="marqueeContainer">
 			<span class="marquee">
@@ -142,6 +161,30 @@ adjust
 				<div class="productText">Shoes</div>
 				<div class="productText">&#8729;</div>
 				<div class="productText">Pants</div>
+				<div class="productText">&#8729;</div>
+				<div class="productText">Shirts</div>
+				<div class="productText">&#8729;</div>
+				<div class="productText">Shoes</div>
+				<div class="productText">&#8729;</div>
+				<div class="productText">Pants</div>
+				<div class="productText">&#8729;</div>
+				<div class="productText">Belt</div>
+				<div class="productText">&#8729;</div>
+				<div class="productText">Shirts</div>
+				<div class="productText">&#8729;</div>
+				<div class="productText">Shoes</div>
+				<div class="productText">&#8729;</div>
+				<div class="productText">Pants</div>
+				<div class="productText">&#8729;</div>
+				<div class="productText">Belt</div>
+				<div class="productText">&#8729;</div>
+				<div class="productText">Shirts</div>
+				<div class="productText">&#8729;</div>
+				<div class="productText">Shoes</div>
+				<div class="productText">&#8729;</div>
+				<div class="productText">Pants</div>
+				<div class="productText">&#8729;</div>
+				<div class="productText">Belt</div>
 				<div class="productText">&#8729;</div>
 				<div class="productText">Shirts</div>
 				<div class="productText">&#8729;</div>
@@ -243,12 +286,9 @@ adjust
 			<div class="reviewItems">
 				<img class="reviewImg" />
 				<div class="reviewText">
-					<h2 class="name">John Doe</h2>
-					<p class="reviewWords">
-						Do officia sint fugiat reprehenderit officia sit do laborum ut
-						consectetur adipisicing excepteur. Exercitation culpa aliqua dolor
-						ad id deserunt sit cillum id ea officia. Est aliqua Lorem
-					</p>
+					<div class="reviewBg"><i class="fa-solid fa-quote-left"></i></div>
+					<h2 class="name"></h2>
+					<p class="reviewWords"></p>
 				</div>
 				<div class="reviewButtons">
 					<button class="reviewButton" id="prevBtn">
@@ -261,83 +301,81 @@ adjust
 				</div>
 			</div>
 		</div>
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+		<svg
+			class="behind"
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 1440 220"
+		>
 			<path
-				fill="#eaddcf"
+				fill="#EADDCF"
 				fill-opacity="1"
-				d="M0,64L80,101.3C160,139,320,213,480,208C640,203,800,117,960,112C1120,107,1280,181,1360,218.7L1440,256L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+				d="M0,96L80,117.3C160,139,320,181,480,165.3C640,149,800,75,960,74.7C1120,75,1280,149,1360,186.7L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
 			></path>
 		</svg>
+
 		<!--FAQ STARTS -->
-		<div class="aboutMeContainer" id="FaQ">
-			<div class="faq">Frequently Asked Questions</div>
 
-			<div class="contentContainerAboutMe">
-				<div class="aboutMeItems">
-					<div class="titleContainer tcActive">
-						<span class="itemTitle">How long is the shipping?</span>
-						<span class="titleIco"
-							><i class="fa-solid fa-angles-left"></i>
-						</span>
-					</div>
+		<div class="faq-container">
+			<h1 id="FaQ">Frequently Asked Questions</h1>
+			<div class="faq-items">
+				<div class="faq-title">
+					<h1 class="faq-h1">What time is the store open?</h1>
 
-					<div class="aboutMeText">
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-						voluptas iure aliquam non eligendi et earum laborum dolor nemo!
-						Dolorum laborum accusantium voluptatum quod id facilis maxime, ipsa
-						quisquam minus.
-					</div>
+					<i class="fa-solid fa-angles-left faq-icon"></i>
 				</div>
-				<div class="aboutMeItems">
-					<div class="titleContainer">
-						<span class="itemTitle">Where do you get your materials? </span>
-						<span class="titleIco"
-							><i class="fa-solid fa-angles-left"></i
-						></span>
-					</div>
-
-					<div class="aboutMeText">
-						<div class="titleLine"></div>
-						Irure dolore elit duis qui pariatur voluptate exercitation
-						consectetur amet aliqua in veniam ea qui. Nisi exercitation anim
-						veniam sit. Cupidatat amet mollit consequat nulla in aliquip
-						occaecat est aute veniam exercitation ipsum velit cupidatat. Anim
-					</div>
+				<div class="faq-p">
+					<div class="faq-line"></div>
+					Enim mollit cupidatat enim laboris. Tempor laboris tempor fugiat ex in
+					cillum consectetur aliquip mollit excepteur esse laboris. Deserunt non
+					aliqua aute incididunt is. Quis et esse officia proident occaecat
+					culpa aliquip labore nisi adipisicing.
 				</div>
+			</div>
+			<div class="faq-items">
+				<div class="faq-title">
+					<h1 class="faq-h1">Are you guys hiring?</h1>
 
-				<div class="aboutMeItems">
-					<div class="titleContainer">
-						<span class="itemTitle">What time is the store open?</span>
-						<span class="titleIco"
-							><i class="fa-solid fa-angles-left"></i
-						></span>
-					</div>
-					<div class="aboutMeText">
-						Id proident aute officia nostrud enim enim ullamco occaecat ullamco.
-						Sit officia nulla voluptate ipsum. Enim cupidatat ea laborum tempor
-						deserunt deserunt aliquip do.
-					</div>
+					<i class="fa-solid fa-angles-left faq-icon"></i>
 				</div>
-				<div class="aboutMeItems">
-					<div class="titleContainer">
-						<span class="itemTitle">Where are you guys located?</span>
-						<span class="titleIco"
-							><i class="fa-solid fa-angles-left"></i
-						></span>
-					</div>
-					<div class="aboutMeText">
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-						voluptas iure aliquam non eligendi et earum laborum dolor nemo!
-						Dolorum laborum accusantium voluptatum quod id facilis maxime, ipsa
-						quisquam minus.
-					</div>
+				<div class="faq-p">
+					<div class="faq-line"></div>
+					Amet nisi magna ut irure veniam voluptate in nostrud adipisicing sint
+					ipsum officia Lorem. Enim officia exercitation incididunt Lorem
+					cupidatat voluptate occaecat est sliqua amet.
+				</div>
+			</div>
+			<div class="faq-items">
+				<div class="faq-title">
+					<h1 class="faq-h1">Insert Question here?</h1>
+
+					<i class="fa-solid fa-angles-left faq-icon"></i>
+				</div>
+				<div class="faq-p">
+					<div class="faq-line"></div>
+					Elit deserunt laborum laboris nostrud ut nisi minim reprehenderit anim
+					consectetur. Occaecat exercitation nisi aliqua ad excepteur et minim
+					aute. Tempor anim u
+				</div>
+			</div>
+			<div class="faq-items">
+				<div class="faq-title">
+					<h1 class="faq-h1">What is your return policy?</h1>
+
+					<i class="fa-solid fa-angles-left faq-icon"></i>
+				</div>
+				<div class="faq-p">
+					<div class="faq-line"></div>
+					Cupidatat ea cupidatat veniam sit sit excepteur et. Ex nulla laboris
+					adipisicing deserunt enim sint proident labore. Minim nisi aliquip
+					Lorem aliqua laborum velit esse c
 				</div>
 			</div>
 		</div>
 
 		<!-- js -->
-		<script src="./script.js" type="text/javascript"></script>
+		<script src="./script.js"></script>
 
+		<script src="./mobileView.Js" type="text/javascript"></script>
 		<script src="./review.js"></script>
 
 		<footer id="contactUs">

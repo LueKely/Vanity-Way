@@ -19,22 +19,22 @@ let users = [];
 const userInfos = [
 	{
 		name: 'Ervin Pangilinan',
-		text: 'Excepteur quis adipisicing labore esse. Quis sint laborum duis fugiat Ullamco consequat sunt occaecat adipisicing minim excepteur exercitation idLorem id',
+		text: 'Excepteur quis adipisicing labore esse. Quis sint laborum duis fuonsequatsicing minim excepion idLorem id',
 		img: './images/george.jpg',
 	},
 	{
 		name: 'Ernest Monticalvo',
-		text: 'Fugiat mollit minim proident qui ullamco dolore occaecat. Officia sunt incididunt consequat voluptate enim eiusmod. Mollit pariatur officia qui enim aliquip duis excepteur exercitation exercitation ea esse sint velit.',
+		text: 'Fugiat mollit minim proident qui  pariatur officia qui enim xercitation exercitation ea esse sint velit.',
 		img: './images/monti.jpg',
 	},
 	{
 		name: 'Anna Williams',
-		text: 'Excepteur velit aliquip nostrud ex sunt laboris voluptate mollit aliqua. Adipisicing amet voluptate cillum incididunt anim consequat quis do est id ex eiusmod. Excepteur officia exercitation amet sit officia anim.',
+		text: 'Excepteur velit aliquip nostrud ex sunt laboris voluptate moicing amnim con id ex er officamet sit nim.',
 		img: './images/chinita.jpg',
 	},
 	{
 		name: 'Blix Quirante',
-		text: 'Enim ex id est nostrud ea consectetur ullamco anim. Non consequat sunt nulla culpa aliquip labore reprehenderit excepteur sint fugiat. Mollit nisi sunt ut dolore non enim magna consectetur proident veniam. ',
+		text: 'Enim ex id est nostrud ea consectetur ullamco anim. Non conndersint fugiat. Mollint ut dolore non enim magna consectetur proident veniam. ',
 		img: './images/pogi.jpg',
 	},
 ];
