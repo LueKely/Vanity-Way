@@ -10,3 +10,4 @@ Here are the resources i used to make this site:
 
 # SPECIAL THANKS
 I would like to thank two of my friends for helping me suggest and add new functions in my project
+I could've not done some of these parts without them
