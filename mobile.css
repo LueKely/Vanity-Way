@@ -43,10 +43,11 @@
 		font-family: var(--title-font);
 		color: #f9f4ef;
 		font-size: 1rem;
-		width: 200px;
+
 		text-align: center;
 		transition: color 0.5s ease-in-out;
 		margin-inline: auto;
+		padding-left: 5vw;
 	}
 	.btnMobile {
 		margin-block: auto;
@@ -122,7 +123,12 @@
 	}
 
 	/* flavourText */
-
+	.ftItem {
+		padding-bottom: 10px;
+	}
+	.testsvg {
+		overflow: hidden;
+	}
 	.flavourText {
 		margin-top: 0;
 	}
@@ -224,6 +230,7 @@
 	.aboutUs {
 		width: auto;
 	}
+	/* background svg */
 }
 @media screen and (max-width: 500px) {
 	.productText {

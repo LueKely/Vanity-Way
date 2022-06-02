@@ -157,6 +157,11 @@ body {
 	background-color: #f9f4ef;
 }
 /* FLAVOUR TEXT STYLING */
+.ft-parent {
+	display: relative;
+	width: auto;
+	height: auto;
+}
 .flavourText {
 	margin-top: 70px;
 	width: 100vw;
@@ -193,7 +198,6 @@ body {
 	flex-wrap: wrap;
 }
 .behind {
-	z-index: -1;
 }
 .ftContent {
 	width: 500px;
@@ -350,11 +354,12 @@ body {
 	padding-bottom: 10px;
 }
 .reviewsContainer {
+	padding: 30px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 100vw;
-	padding-bottom: 10px;
+
 	background-color: #eaddcf;
 
 	flex-direction: column;
@@ -397,6 +402,8 @@ body {
 }
 
 .reviewText {
+	overflow: hidden;
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -405,14 +412,27 @@ body {
 	height: 225px;
 	margin-bottom: 10px;
 }
+.reviewBg {
+	top: 30%;
+	position: absolute;
+	font-size: 10rem;
+	opacity: 0.35;
+
+	color: #8c7851;
+	z-index: 0;
+}
 
 .name {
+	z-index: 2;
 	font-family: var(--title-font);
 	padding-block: 10px;
 }
 .reviewWords {
+	margin-top: 10px;
+	z-index: 2;
 	font-size: 0.85rem;
 	text-align: center;
+	color: #020826;
 }
 
 .reviewButtons {
@@ -613,6 +633,7 @@ footer {
 	font-size: 0.75rem;
 	color: #f9f4ef;
 }
+
 /* animation keys */
 @keyframes marqueeAnimate {
 	0% {
