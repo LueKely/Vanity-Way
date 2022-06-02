@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Secular+One&display=swap" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab&display=swap');
 :root {
-	--bg-color: #f5f4ef;
-	--bg-color-accent: #aaa8a7;
-	--main-color: #d46752;
 	--main-accent-color: #ac8c64;
 	--inverted-bg-color: #222020;
 	--title-font: 'Secular One', sans-serif;
@@ -367,19 +364,6 @@ body {
 .reviewTitle {
 	font-family: var(--title-font);
 	font-size: 3rem;
-}
-.reviewTitle::after {
-	/* position: absolute;
-	display: block;
-
-	width: 321px;
-	height: 4px;
-
-	background-color: #020826;
-	border-radius: 4px;
-	color: red;
-	font-family: 'Font Awesome 5 Free';
-	content: '\f10d'; */
 }
 .reviewItems {
 	margin-top: 20px;
