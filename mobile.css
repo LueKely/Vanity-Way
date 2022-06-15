@@ -9,6 +9,9 @@
 @media screen and (max-width: 899px) {
 	/* wagmotong galawin */
 	/* navbar */
+	html {
+		scroll-padding-top: 100px;
+	}
 	.nbContainer {
 		display: none;
 	}
