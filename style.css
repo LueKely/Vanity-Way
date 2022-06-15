@@ -5,13 +5,14 @@
 	--inverted-bg-color: #222020;
 	--title-font: 'Secular One', sans-serif;
 	--body-font: 'Poppins', sans-serif;
+	--navheight: 70px;
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
 }
 html {
 	scroll-behavior: smooth;
-	scroll-padding-top: 170px;
+	scroll-padding-top: var(--navheight);
 }
 a {
 	text-decoration: none;

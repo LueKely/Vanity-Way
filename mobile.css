@@ -1,4 +1,7 @@
 /* mobile nav */
+:root {
+	--navbar-size: 70px;
+}
 .SuperParent {
 	display: none;
 }
@@ -10,7 +13,7 @@
 	/* wagmotong galawin */
 	/* navbar */
 	html {
-		scroll-padding-top: 100px;
+		scroll-padding-top: var(--navbar-size);
 	}
 	.nbContainer {
 		display: none;
