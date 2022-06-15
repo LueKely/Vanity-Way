@@ -1,7 +1,8 @@
-/* mobile nav */
 :root {
 	--navbar-size: 70px;
 }
+/* mobile nav */
+
 .SuperParent {
 	display: none;
 }
